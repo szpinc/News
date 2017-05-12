@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	
+	<package name="excelHandler" extends="struts-default" namespace="/excel">
+		<action name="getExcel" class="com.szp.action.FileUploadAction">
+        	<result name="success">/WEB-INF/jsp/readExcel.jsp</result>
+        </action>
+        <action name="doExcel">
+        	<result>/WEB-INF/jsp/readExcel.jsp</result>
+        </action>
+        <action name="show"  class="com.szp.action.FileUploadAction" method="/show">
+        	<result name="success">/WEB-INF/jsp/readExcel.jsp</result>
+        </action>
+	</package>
+	
+	<package name="lesson" extends="struts-default"  namespace="/lesson">
+		<action name="index" class="com.szp.action.LessonAction" method="getIndex">
+			<result>/WEB-INF/jsp/admin-form.jsp</result>
+		</action>
+		<action name="getLesson" class="com.szp.action.LessonAction" method="getLesson" >
+			<result></result>
+		</action>
+	</package>
+
+</struts>

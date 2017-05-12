@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <constant name="struts.devMode" value="true"/>
+    <constant name="struts.enable.DynamicMethodInvocation" value="false"/>
+    <!-- 配置文件上传大小 -->
+    <constant name="struts.multipart.maxSize" value="50000000"></constant>
+
+    <package name="default" extends="struts-default">
+        <default-action-ref name="notfound"/>
+        <action name="notfound">
+            <result>/404.html</result>
+        </action>
+
+        <action name="index" class="com.szp.action.ShowIndexAction">
+            <result>/WEB-INF/jsp/index.jsp</result>
+        </action>
+    </package>
+      
+      <package name="com.szp.user" extends="struts-default" namespace="/user">
+      	<action name="login">
+      		<result>/WEB-INF/jsp/login.jsp</result>
+      	</action>
+      </package>
+      
+      <package name="com.szp.manager" extends="struts-default" namespace="/manage">
+      	<action name="add" class="com.szp.action.ShowManagerAction" method="add">
+      		<result>/WEB-INF/jsp/manager/add_article.jsp</result>
+      	</action>
+      	<action name="add_article" class="com.szp.action.ShowManagerAction" method="addArticle">
+      		<result name="success">/index.jsp</result>
+      	</action>
+      </package>
+
+
+    <package name="com.szp.archives" extends="struts-default" namespace="/archives">
+        <action name="*" class="com.szp.action.ArticleAction">
+            <result name="success">/WEB-INF/jsp/article/article.jsp</result>
+            <result name="404">/404.html</result>
+        </action>
+    </package>
+
+    <package name="com.szp.page" extends="struts-default" namespace="/page">
+        <action name="*" class="com.szp.action.ArticleAction" method="pageAction">
+            <result name="success">/WEB-INF/jsp/article/articlePage.jsp</result>
+            <result name="404">/404.html</result>
+            <result name="index" type="redirectAction">
+                <param name="actionName">index</param>
+                <param name="namespace">/</param>
+            </result>
+        </action>
+    </package>
+
+    <package name="com.szp.comment" extends="struts-default" namespace="/comment">
+        <action name="submit"></action>
+    </package>
+
+</struts>

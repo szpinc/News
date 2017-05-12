@@ -1,0 +1,16 @@
+<%@ page language="java"  pageEncoding="UTF-8"%>
+<meta http-equiv="X-UA-Compatible" content="IE=11,IE=10,IE=9,IE=8">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta http-equiv="X-Dns-Prefetch-Control" content="on">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-title" content="SZP科技">
+<meta name="applicable-device" content="pc,mobile">
+<meta name="MobileOptimized" content="width"/>
+<meta name="HandheldFriendly" content="true"/>
+<link rel="stylesheet" href="${basePath}/assets/css/amazeui.min.css"/>
+<link rel='stylesheet' id='_bootstrap-css' href='${basePath}/css/bootstrap.min.css?ver=1.9' type='text/css' media='all' />
+<link rel='stylesheet' id='_fontawesome-css' href='${basePath}/font-awesome-4.7.0/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='_main-css' href='${basePath}/css/main.css?ver=1.9' type='text/css' media='all' />
+<link rel="shortcut icon" href="${basePath}/favicon.png">
+<style>.container{max-width:1150px}a:hover, .site-navbar li:hover > a, .site-navbar li.active a:hover, .site-navbar a:hover, .search-on .site-navbar li.navto-search a, .topbar a:hover, .site-nav li.current-menu-item > a, .site-nav li.current-menu-parent > a, .site-search-form a:hover, .branding-primary .btn:hover, .title .more a:hover, .excerpt h2 a:hover, .excerpt .meta a:hover, .excerpt-minic h2 a:hover, .excerpt-minic .meta a:hover, .article-content .wp-caption:hover .wp-caption-text, .article-content a, .article-nav a:hover, .relates a:hover, .widget_links li a:hover, .widget_categories li a:hover, .widget_ui_comments strong, .widget_ui_posts li a:hover .text, .widget_ui_posts .nopic .text:hover , .widget_meta ul a:hover, .tagcloud a:hover, .textwidget a:hover, .sign h3, #navs .item li a, .url, .url:hover, .excerpt h2 a:hover span, .widget_ui_posts a:hover .text span, .widget-navcontent .item-01 li a:hover span, .excerpt-minic h2 a:hover span, .relates a:hover span{color: #019eff;}.btn-primary, .label-primary, .branding-primary, .post-copyright:hover, .article-tags a, .pagination ul > .active > a, .pagination ul > .active > span, .pagenav .current, .widget_ui_tags .items a:hover, .sign .close-link, .pagemenu li.active a, .pageheader, .resetpasssteps li.active, #navs h2, #navs nav, .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary, .tag-clouds a:hover{background-color: #019eff;}.btn-primary, .search-input:focus, #bdcs .bdcs-search-form-input:focus, #submit, .plinks ul li a:hover,.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open > .dropdown-toggle.btn-primary{border-color: #019eff;}.search-btn, .label-primary, #bdcs .bdcs-search-form-submit, #submit, .excerpt .cat{background-color: #019eff;}.excerpt .cat i{border-left-color:#019eff;}@media (max-width: 720px) {.site-navbar li.active a, .site-navbar li.active a:hover, .m-nav-show .m-icon-nav{color: #019eff;}}@media (max-width: 480px) {.pagination ul > li.next-page a{background-color:#019eff;}}</style>
+<!--[if lt IE 9]><script src="//static.lancdn.com/landian/v9/js/libs/html5.min.js"></script><![endif]-->

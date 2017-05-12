@@ -1,0 +1,24 @@
+<c3p0-config>
+
+
+	<default-config>
+		<property name="jdbcUrl">jdbc:mysql:///news?characterEncoding=UTF-8
+		</property>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="user">root</property>
+		<property name="password">0652</property>
+
+		<property name="checkoutTimeout">30000</property>
+		<property name="idleConnectionTestPeriod">30</property>
+		<property name="initialPoolSize">10</property>
+		<property name="maxIdleTime">30</property>
+		<property name="maxPoolSize">100</property>
+		<property name="minPoolSize">10</property>
+		<property name="maxStatements">200</property>
+	</default-config>
+
+	<!-- <named-config name="dumbTestConfig"> <property name="maxStatements">200</property> 
+		<property name="jdbcUrl">jdbc:test</property> <user-overrides user="poop"> 
+		<property name="maxStatements">300</property> </user-overrides> </named-config> -->
+
+</c3p0-config>
