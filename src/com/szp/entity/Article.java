@@ -1,15 +1,35 @@
 package com.szp.entity;
 
+@Table("tb_article")
 public class Article {
+
+	@PrimaryKey @Column("id")
 	private int id;
+
+	@Column("title")
 	private String title;
+
+	@Column("classify")
 	private String classify;
+
+	@Column("attribute")
 	private String attribute;
+
+	@Column("attributeUrl")
 	private String attributeUrl;
+
+	@Column("content")
 	private String content;
+
+	@Column("time")
 	private String time;
+
+	@Column("comment")
 	private int comment;
+
+	@Column("previewPic")
 	private String previewPic;
+
 	public int getId() {
 		return id;
 	}
